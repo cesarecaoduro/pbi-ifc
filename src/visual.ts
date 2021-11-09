@@ -79,7 +79,8 @@ export class Visual implements IVisual {
         this.scene = new Scene();
         // console.log(this.scene);
 
-        // const ifcLoader = new IFCLoader();
+        const ifcLoader = new IFCLoader();
+        // console.log(ifcLoader);
 
         //Sets up the renderer, fetching the canvas of the HTML
         const threeCanvas = document.getElementById("three-canvas");
