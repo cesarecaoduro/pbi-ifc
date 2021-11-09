@@ -20,11 +20,14 @@
     "d3": "5.12.0",
     "powerbi-visuals-api": "~3.8.0",
     "powerbi-visuals-utils-dataviewutils": "2.2.1",
-    "regenerator-runtime": "^0.13.9"
+    "regenerator-runtime": "^0.13.9",
+    "three": "^0.134.0",
+    "web-ifc-three": "^0.0.81"
   },
   "devDependencies": {
     "@types/core-js": "^2.5.5",
     "@types/regenerator-runtime": "^0.13.1",
+    "@types/three": "^0.134.0",
     "ts-loader": "6.1.0",
     "tslint": "^5.18.0",
     "tslint-microsoft-contrib": "^6.2.0",
