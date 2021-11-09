@@ -1,0 +1,24 @@
+{
+    "visual": {
+        "name": "pbiifc",
+        "displayName": "pbiifc",
+        "guid": "pbiifcAC7183C660094BBFBAF6377A0971F532",
+        "visualClassName": "Visual",
+        "version": "1.0.0",
+        "description": "",
+        "supportUrl": "",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "3.8.0",
+    "author": {
+        "name": "Cesare Caoduro",
+        "email": "cesare.caoduro@aecom.com"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}
