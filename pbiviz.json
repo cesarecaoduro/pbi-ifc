@@ -19,6 +19,5 @@
     },
     "style": "style/visual.less",
     "capabilities": "capabilities.json",
-    "dependencies": null,
-    "stringResources": []
+    "dependencies": null
 }

@@ -79,8 +79,7 @@ export class Visual implements IVisual {
         this.scene = new Scene();
         // console.log(this.scene);
 
-        const ifcLoader = new IFCLoader();
-        // console.log(ifcLoader);
+
 
         //Sets up the renderer, fetching the canvas of the HTML
         const threeCanvas = document.getElementById("three-canvas");
@@ -153,6 +152,26 @@ export class Visual implements IVisual {
             renderer.setSize(this.size.width, this.size.height);
         });
         // console.log(this.scene);
+
+
+        const ifcLoader = new IFCLoader();
+        ifcLoader.ifcManager.setWasmPath("asset/");
+        // ifcLoader.load(
+        //     "assets/models/rst_advanced_sample_project.ifc",
+        //     (ifcModel) => console.log(ifcModel)
+        //     )
+        // console.log(ifcLoader);
+
+        const input = document.getElementById("file-input");
+        input.addEventListener(
+            "change",
+            async (changed) => {
+                const file = (changed.target as HTMLInputElement).files[0];
+                var ifcURL = URL.createObjectURL(file);
+                await ifcLoader.loadAsync(ifcURL);
+            },
+            false
+        );
     }
 
     public update(options: VisualUpdateOptions) {
